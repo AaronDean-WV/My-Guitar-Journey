@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "email": "adean30462@gmail.com",
+      "name": "Aaron Dean",
+      "image": "C:\\fakepath\\1184806-large-orange-amp-wallpaper-3110x2073-ipad.jpg",
+      "id": 1
+    },
+    {
+      "email": "olivea_weaver@yahoo.com",
+      "name": "Olivea Dean",
+      "image": null,
+      "id": 2
+    }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "img": "http://www.vintageandrare.com/uploads/products/56236/2188151/original.jpg",
+      "name": "Guitar Anatomy 101",
+      "info": "Congratulations for taking the first steps to becoming a guitar god. First things first, you've got to learn the ins and outs of that sweet gitfiddle you're wanting to play. Check out this link and mark this lesson as completed whenever you're finished!",
+      "link:": "https://www.youtube.com/watch?v=58cpjSRuL_Y",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "img": "https://chordword.com/wp-content/uploads/2017/12/g-Major.png",
+      "name": "Your first chord",
+      "info": "The time has come young padiwan. Time dip them toes in the water. If you have eyes you should be able to see the chord image at the top of the page. Your first chord will be the G major. In the image you will see 6 vertical lines that correspond with each string on your guitar. From the thickest string to the thinnest (reffered to as bottom to the top) E-A-D-G-B-E. The horizontal lines correspond to the vertical numbers to the left, which refers to the fret you will be pressing. Try and get your fingar as close to the metal fret wire as possible. Make sure you press with a good amount of pressure as well. The numbers in the circle refer to which finger you will be pressing. 1 is your index finger, 2 is your middle finger, 3 is the ring finger, and 4 is your pinky. At the top under the chord name you will notice three O's. When you see this on a chord chart it means you leave those open. Conversely if you see an x it means you do not play those, generally by muting the string, but we will get to that later. You strum all the strings in one motion. This will take some practice, but so does everything on guitar so buckle up. Check out the link then mark this lesson as completed once your finished!",
+      "link:": "https://www.youtube.com/watch?v=gEzwpqmt2gc",
+      "isComplete": false
+    },
+    {
+      "id": 3,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71sRZy1laRL._AC_SL1050_.jpg",
+      "name": "TIMING IS EVERYTHING",
+      "info": "Say it with me, TIMING IS EVERYTHING. In my opinion timing is the most essential part of playing music. Without it you will sound like actual poo. An invaluable tool to teach you timing will be a metronome. You can download free apps for this. Watch this lesson and play your G chord along with a metronome. Start at a slow tempo (around 60 beats per minute) in 4/4 timing and move up in tempo as you get better. Mark this as complete once you feel comfortable with the concept.",
+      "link:": "https://www.youtube.com/watch?v=mlZVQbFW0JA",
+      "isComplete": false
+    }
+  ],
+  "completedLessons": [],
+  "guitarChord": [
+    {
+      "id": 1,
+      "chordName": "G Major",
+      "img": "https://chordword.com/wp-content/uploads/2017/12/g-Major.png"
+    },
+    {
+      "id": 2,
+      "chordName": "C",
+      "img": "https://www.worshiptutorials.com/wp-content/uploads/2013/01/C-maj.jpg"
+    },
+    {
+      "id": 3,
+      "chordName": "D Major",
+      "img": "http://guitarlessons-com.s3.amazonaws.com/media/guitar-lessons-2/d-major.jpg"
+    },
+    {
+      "id": 4,
+      "chordName": "E Minor",
+      "img": "https://theacousticguitarist.com/wp-content/uploads/2021/05/e-minor-chord-chart.gif"
+    },
+    {
+      "id": 5,
+      "chordName": "A Minor",
+      "img": "https://2.bp.blogspot.com/-KAGuaV1gEls/UQOLt3j54PI/AAAAAAAAAFI/D5Mw8h7067M/s1600/A+minor+guitar+chord-beginners+chords.jpg"
+    }
+  ],
+  "comments": [],
+  "lessonComments": []
+}
