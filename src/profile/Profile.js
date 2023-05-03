@@ -24,6 +24,7 @@ export const Profile = () => {
           <section className="profile" key={`profile--${currentUser}`}>
             <div className="profile--name">Name: {currentUser?.name}</div>
             <div className="profile--email">Email: {currentUser?.email}</div>
+            <img src={currentUser?.image} alt="Profile Pic" className="image-container"  />
           </section>
         </article>
       );

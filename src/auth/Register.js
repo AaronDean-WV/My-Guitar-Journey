@@ -79,7 +79,7 @@ export const Register = (props) => {
                 <fieldset>
                     <label htmlFor="image"> Upload a photo of your guitar! </label>
                     <input onChange={updateUser}
-                        type="file" id="image" accept="image/*" className="form-control" />
+                        type="text" id="image" className="form-control" placeholder="Copy the URL of your favorite guitar here to set as profile picture" required />
                 </fieldset>
                 <fieldset>
                     <button type="submit"> Register </button>

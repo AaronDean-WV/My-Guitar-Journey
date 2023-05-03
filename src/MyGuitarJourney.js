@@ -5,6 +5,7 @@ import { Register } from './auth/Register';
 import { Authorized } from './views/authorized';
 import { NavBar } from './nav/NavBar';
 import { ApplicationViews } from './views/ApplicationViews';
+import { RandomChord } from './chord/RandomChord';
 
 
 
@@ -16,7 +17,7 @@ export const MyGuitarJourney = () => {
 		<Route path="*" element={
 			<Authorized>
 				<>
-          <NavBar/>
+          <NavBar/> <RandomChord/>
           <ApplicationViews/>
         </>
 			</Authorized>
