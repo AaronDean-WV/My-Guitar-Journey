@@ -13,8 +13,11 @@ export const getChord = () => {
       .then(response => response.json())
   }
   
+  const localUser = localStorage.getItem("activeUser")
+  const userObject = JSON.parse(localUser)
+
   export const addCompletedLesson = lessonId => {
-    const userId = 1; // TODO: replace with actual user ID
+    const userId = userObject.id; 
     const newRecord = {
       userId,
       lessonId
@@ -29,3 +32,7 @@ export const getChord = () => {
       .then(response => response.json());
   };
   
+  export const getCompletedLesson = () => {
+    return fetch('http://localhost:8088/completedLessons')
+    .then(response => response.json())
+  }
