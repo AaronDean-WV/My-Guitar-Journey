@@ -5,12 +5,6 @@
       "name": "Aaron Dean",
       "image": "https://peachguitars.2dimg.com/114/4o0a0583_21edbbf387.jpg",
       "id": 1
-    },
-    {
-      "email": "olivea_weaver@yahoo.com",
-      "name": "Olivea Dean",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/612Yffa6jZS._AC_SL1000_.jpg",
-      "id": 2
     }
   ],
   "lessons": [
@@ -36,23 +30,7 @@
       "link": "https://www.youtube.com/watch?v=mlZVQbFW0JA"
     }
   ],
-  "completedLessons": [
-    {
-      "userId": 2,
-      "lessonId": 2,
-      "id": 1
-    },
-    {
-      "userId": 2,
-      "lessonId": 3,
-      "id": 2
-    },
-    {
-      "userId": 2,
-      "lessonId": 1,
-      "id": 3
-    }
-  ],
+  "completedLessons": [],
   "chords": [
     {
       "id": 1,
@@ -80,24 +58,5 @@
       "img": "https://2.bp.blogspot.com/-KAGuaV1gEls/UQOLt3j54PI/AAAAAAAAAFI/D5Mw8h7067M/s1600/A+minor+guitar+chord-beginners+chords.jpg"
     }
   ],
-  "comments": [
-    {
-      "userId": 2,
-      "lessonId": 1,
-      "comment": "fart noise",
-      "id": 4
-    },
-    {
-      "userId": 2,
-      "lessonId": 3,
-      "comment": "Polished turd",
-      "id": 5
-    },
-    {
-      "userId": 2,
-      "lessonId": 1,
-      "comment": "big facts",
-      "id": 7
-    }
-  ]
+  "comments": []
 }
