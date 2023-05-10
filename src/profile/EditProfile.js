@@ -12,6 +12,12 @@ export const ProfileEdit = () => {
   const navigate = useNavigate();
   const localUser = localStorage.getItem("activeUser");
   const userObject = JSON.parse(localUser);
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    image: "",
+  })
+
 
   useEffect(() => {
     fetch(`http://localhost:8088/users?userId=${userObject.id}`)
@@ -20,6 +26,18 @@ export const ProfileEdit = () => {
         assignProfile(data);
       });
   }, [userId]);
+
+  
+ useEffect(() => {
+  if (user[0]) {
+    setUserData({
+      name: user[0].name,
+      email: user[0].email,
+      image: user[0].image
+    })
+}
+}, [user]);
+
 
   const handleSaveButtonClick = (event) => {
     event.preventDefault();
@@ -64,7 +82,8 @@ export const ProfileEdit = () => {
           <label htmlFor="name">Name:</label>
           <input
             type="text"
-            value={user.name}
+            value={userData.name}
+            name="name"
             onChange={(evt) =>
               assignProfile({ ...user, name: evt.target.value })
             }
@@ -76,7 +95,7 @@ export const ProfileEdit = () => {
           <label htmlFor="email">Email:</label>
           <input
             type="text"
-            value={user.email}
+            value={userData.email}
             onChange={(evt) =>
               assignProfile({ ...user, email: evt.target.value })
             }
@@ -88,7 +107,7 @@ export const ProfileEdit = () => {
           <label htmlFor="image">Profile Image URL:</label>
           <input
             type="text"
-            value={user.image}
+            value={userData.image}
             onChange={(evt) =>
               assignProfile({ ...user, image: evt.target.value })
             }

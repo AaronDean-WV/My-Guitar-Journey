@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAllLessons, addCompletedLesson, getCompletedLesson } from "../ApiManager";
 import { CommentBox } from "../comment/CommentBox";
+import "./Lessons.css"
 
 export const Lessons = () => {
   const [lessons, setLessons] = useState([]);
@@ -46,16 +47,18 @@ export const Lessons = () => {
   
   return (
     <article className="lesson">
-      <bold>
+      
         <h1>Lessons</h1>
-      </bold>
-      <button className="closeButton" onClick={handleOffClick}>
-        Close lesson
-      </button>
+      
       {selectedLesson && (
-        <button className="completeButton" onClick={handleCompleteClick}>
-          Mark lesson as complete
-        </button>
+        <div>
+          <button className="completeButton" onClick={handleCompleteClick}>
+            Mark lesson as complete
+          </button>
+          <button className="closeButton" onClick={handleOffClick}>
+            Close lesson
+          </button>
+        </div>
       )}
       {lessons.map((lesson) => {
         return (

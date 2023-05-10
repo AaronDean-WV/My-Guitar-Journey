@@ -20,19 +20,27 @@ export const Profile = () => {
   };
 
   const currentUser = users.find((user) => user.id === userObject.id);
+  const styles = {
+    imageContainer: {
+      float: 'left',
+      marginRight: '20px',
+    }
+  };
+  
 
   return (
-      <article className="profile">
-          {editing ? (
-              <ProfileEdit currentUser={currentUser} setEditing={setEditing} />
-          ) : (
-              <section className="profile" key={`profile--${currentUser}`}>
-                  <div className="profile--name">Name: {currentUser?.name}</div>
-                  <div className="profile--email">Email: {currentUser?.email}</div>
-                  <img src={currentUser?.image} alt="Profile Pic" className="image-container" />
-                  <button onClick={handleEditProfile}>Edit Your Profile</button>
-              </section>
-          )}
-      </article>
+    <article className="profile">
+    {editing ? (
+        <ProfileEdit currentUser={currentUser} setEditing={setEditing} />
+    ) : (
+        <section className="profile" key={`profile--${currentUser}`}>
+            <button onClick={handleEditProfile}>Edit Your Profile</button>
+            <div className="profile--name">Name: {currentUser?.name}</div>
+            <div className="profile--email">Email: {currentUser?.email}</div>
+            <img src={currentUser?.image} alt="Profile Pic" style={styles.imageContainer} />
+        </section>
+    )}
+  </article>
+  
   );
 };

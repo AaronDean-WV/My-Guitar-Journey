@@ -1,0 +1,16 @@
+
+  .display--profile--name {
+    margin-right: -130px;
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  
+  .image-container-two {
+    width: 100px;
+    height: 100px;
+  }
+ .img--move {
+    float: right;
+    margin-right: -130px;
+ }

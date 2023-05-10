@@ -21,14 +21,9 @@
     padding-top: 20px;
 }
 
-.section--left{
-    background-color: lightcoral;
-    border-right: solid 4px lightgray;
-}
+
 
 .section--right{
-    background-color: aquamarine;
-    border-left: solid 4px lightgray;
     display: flex;
     flex-direction: column;
     justify-content: start;

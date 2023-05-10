@@ -30,7 +30,18 @@
       "link": "https://www.youtube.com/watch?v=mlZVQbFW0JA"
     }
   ],
-  "completedLessons": [],
+  "completedLessons": [
+    {
+      "userId": 1,
+      "lessonId": 1,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "lessonId": 2,
+      "id": 2
+    }
+  ],
   "chords": [
     {
       "id": 1,

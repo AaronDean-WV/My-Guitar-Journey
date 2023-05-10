@@ -13,7 +13,7 @@ export const RandomChord = () => {
 
   return (
     <article className="chord">
-      <h1>Random Chord</h1>
+      
       {chord && (
         <section className="chord" key={`chord--${chord.id}`}>
           <div className="chord--image">

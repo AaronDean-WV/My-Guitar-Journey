@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./navBar.css"
 
+
 export const NavBar = () => {
 
     const navigate = useNavigate()
@@ -8,7 +9,6 @@ export const NavBar = () => {
 
         <div className="navbar--container">
 
-            <Link className="navbar--logo" to={"/"}> <h1> MY GUITAR JOURNEY </h1></Link>
 
             <ul className="navbar--links">
 
@@ -21,6 +21,7 @@ export const NavBar = () => {
                 </li>
 
               </ul>
+            <Link className="navbar--logo" to={"/"}img src="https://th.bing.com/th/id/OIG.vABi6qO_lIVp6BWcMkKW?pid=ImgGn" alt="logo"> <h1> MY GUITAR JOURNEY </h1></Link>
             
 
             {

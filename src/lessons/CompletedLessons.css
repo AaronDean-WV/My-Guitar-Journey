@@ -1,0 +1,15 @@
+.completed-lesson {
+  margin-left: 900px;
+  padding: 10px;
+  width: 800px;
+  height: 800px;
+  }
+
+  .completed-lesson h1 {
+    font-size: 75px; /* larger font size for heading */
+  }
+  
+  .completed-lesson li {
+    font-size: 18px; /* smaller font size for list items */
+    margin-left: 175px;
+  }
