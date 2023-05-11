@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getUsers } from "../ApiManager";
 import { ProfileEdit } from "./EditProfile";
+import "./Profile.css"
 
 
 export const Profile = () => {
@@ -31,7 +32,7 @@ export const Profile = () => {
   return (
     <article className="profile">
     {editing ? (
-        <ProfileEdit currentUser={currentUser} setEditing={setEditing} />
+       <div className="edit--profile"> <ProfileEdit currentUser={currentUser} setEditing={setEditing} /> </div>
     ) : (
         <section className="profile" key={`profile--${currentUser}`}>
             <button onClick={handleEditProfile}>Edit Your Profile</button>

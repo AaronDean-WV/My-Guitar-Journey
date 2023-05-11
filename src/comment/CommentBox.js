@@ -50,7 +50,7 @@ export const CommentBox = ({ lessonId }) => {
                         required autoFocus
                         type="text"
                         className="form-control"
-                        placeholder="Please give us your feedback on this lesson"
+                        placeholder="Please give us your feedback on this lesson."
                         value={chat.comment}
                         onChange={
                             (evt) => {

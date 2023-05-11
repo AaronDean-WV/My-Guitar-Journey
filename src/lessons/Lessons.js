@@ -44,21 +44,28 @@ export const Lessons = () => {
     }
   };
   
-  
   return (
     <article className="lesson">
-      
-        <h1>Lessons</h1>
-      
+      <h1>Lessons</h1>
       {selectedLesson && (
-        <div>
-          <button className="completeButton" onClick={handleCompleteClick}>
-            Mark lesson as complete
-          </button>
-          <button className="closeButton" onClick={handleOffClick}>
-            Close lesson
-          </button>
-        </div>
+        <section className="lesson--selected">
+          <div className="lesson--info">
+            <div>
+              {selectedLesson.info}
+              <div className="lesson--link">
+                <a href={selectedLesson.link}>Watch on Youtube</a>
+            <div className="lesson--buttons">
+              <button className="completeButton" onClick={handleCompleteClick} title="Mark Lesson as Completed">
+                
+              </button>
+              <button className="closeButton" onClick={handleOffClick}title="Close Lesson">
+              </button>
+            </div>
+              </div>
+              <CommentBox lessonId={selectedLesson.id} />
+            </div>
+          </div>
+        </section>
       )}
       {lessons.map((lesson) => {
         return (
@@ -75,15 +82,6 @@ export const Lessons = () => {
                 <button>{lesson?.name}</button>
               </li>
             </div>
-            {selectedLesson?.id === lesson.id && (
-              <div className="lesson--info">
-                {lesson?.info}
-                <div className="lesson--link">
-                  <a href={lesson?.link}>Watch on Youtube</a>
-                </div>
-                <CommentBox lessonId={selectedLesson?.id} />
-              </div>
-            )}
           </section>
         );
       })}

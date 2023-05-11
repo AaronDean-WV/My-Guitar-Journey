@@ -1,20 +1,66 @@
 .lesson--info {
-    position:relative;
+    position:sticky;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: #fff;
+    background-color: #ccc4c4;
     border: 1px solid #ccc;
     padding: 20px;
-    width: 80%;
+    width: 45vw;
+    height: 45vh;
     max-width: 600px;
     max-height: 80%;
     overflow-y: auto;
+    margin: 15%;
 }
 
-article.lesson {
-    position: relative;
-    margin-bottom: 20px;
-    z-index: 2;
+.lesson {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.lesson--buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
+  
+  .completeButton {
+    position: relative;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcliparts.co%2Fcliparts%2F8c6%2F8RG%2F8c68RGyei.png&f=1&nofb=1&ipt=c5c126581ddf82d91555952eced9ca87f3411111c06d2d7a8590923ace1cb1d0&ipo=images');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 12px;
+  font-size: 16px;
+  }
+  
+  .completeButton::before {
+    
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .closeButton {
+    position: relative;
+    padding: 10px;
+  }
+  
+  .closeButton::before {
+    content: "X";
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

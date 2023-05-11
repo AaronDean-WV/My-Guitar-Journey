@@ -18,7 +18,7 @@
     {
       "id": 2,
       "img": "https://chordword.com/wp-content/uploads/2017/12/g-Major.png",
-      "name": "Your first chord",
+      "name": "Your First Chord",
       "info": "The time has come young padiwan. Time dip them toes in the water. If you have eyes you should be able to see a random chord image at the top of the page. In the image you will see 6 vertical lines that correspond with each string on your guitar. From the thickest string to the thinnest (reffered to as bottom to the top) E-A-D-G-B-E going left to right on the chord chart. The horizontal lines refers to the fret you will be pressing (first line from the top down being the first fret, second being the second fret, and so on). Try and get your fingar as close to the metal fret wire as possible. Make sure to press with a good amount of pressure as well, too light and the note will not ring out. The numbers in the circle refer to which finger you will be pressing with. 1 is your index finger, 2 is your middle finger, 3 is the ring finger, and 4 is your pinky finger. At the top under the chord name you will mey notice some O's or X's. When you see this on a chord chart it means you leave the string with the O open. Alternatively, if you see an x it means you do not play those strings, generally by muting the string, but we will get to that later. You strum all the strings in one motion. This will take some practice, but so does everything on guitar so buckle up. Your very first chord will be the G major chord. Check out the link then mark this lesson as complete once your finished!",
       "link": "https://www.youtube.com/watch?v=gEzwpqmt2gc"
     },
@@ -40,6 +40,11 @@
       "userId": 1,
       "lessonId": 2,
       "id": 2
+    },
+    {
+      "userId": 1,
+      "lessonId": 3,
+      "id": 3
     }
   ],
   "chords": [
@@ -69,5 +74,12 @@
       "img": "https://2.bp.blogspot.com/-KAGuaV1gEls/UQOLt3j54PI/AAAAAAAAAFI/D5Mw8h7067M/s1600/A+minor+guitar+chord-beginners+chords.jpg"
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "userId": 1,
+      "lessonId": 2,
+      "comment": "lesson sucks bro",
+      "id": 1
+    }
+  ]
 }

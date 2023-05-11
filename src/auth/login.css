@@ -33,7 +33,7 @@ fieldset {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #eee9e9;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -43,6 +43,7 @@ fieldset {
 
 .container--login {
     text-align: center;
+margin-right: 500px;
 }
 
 .form--login {
@@ -59,3 +60,10 @@ fieldset {
     position: relative;
     bottom: -2rem;
 }
+
+.link--register a {
+    color: rgb(247, 9, 9);
+    font-size: 20px;
+    margin-right: 450px;
+  }
+  

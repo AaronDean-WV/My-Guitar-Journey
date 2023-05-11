@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { getAllLessons, addCompletedLesson, getCompletedLesson } from "../ApiManager";
+import { getAllLessons, getCompletedLesson } from "../ApiManager";
 import "./CompletedLessons.css"
 
 export const CompletedLessons = () => {
   const [lessons, setLessons] = useState([]);
-  const [selectedLesson, setSelectedLesson] = useState();
   const [completedLessons, setCompletedLessons] = useState([]);
   const localUser = localStorage.getItem("activeUser");
   const userObject = JSON.parse(localUser);
@@ -26,7 +25,7 @@ export const CompletedLessons = () => {
       const lesson = lessons.find((lesson) => lesson.id === completedLesson.lessonId);
       console.log('completedLesson:', completedLesson);
       console.log('lesson:', lesson);
-      return lesson.name;
+      return lesson?.name;
     });
 
   return (
